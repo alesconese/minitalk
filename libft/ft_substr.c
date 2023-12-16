@@ -40,9 +40,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-/*
-int main(void){
-	char	*str = ft_substr("hola", 2, 30);
-
-	return 0;
-}*/

@@ -21,6 +21,8 @@ SRCS 		=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 
 OBJS		=	$(SRCS:.c=.o)
 
+INCLUDES 	=	libft.h
+
 CC			=	gcc
 RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror -I.
@@ -28,6 +30,9 @@ CFLAGS		=	-Wall -Wextra -Werror -I.
 NAME		=	libft.a
 
 all:		$(NAME)
+
+%.o:%.c Makefile $(INCLUDES)
+		$(CC) $(FLAGS) -I ./ -c $< -o $@
 
 $(NAME):	$(OBJS)
 				ar rcs $(NAME) $(OBJS)

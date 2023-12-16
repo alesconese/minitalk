@@ -48,7 +48,7 @@ static	void	*ft_free_split(char **split, size_t n)
 	return (NULL);
 }
 
-static	void	*ft_fill_last(char **split, char const *s, size_t start, 
+static	void	*ft_fill_last(char **split, char const *s, size_t start,
 		size_t n)
 {
 	size_t	i;
@@ -116,18 +116,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (split);
 }
-/*
-#include <stdio.h>
-
-int	main(void){
-	char	**split = ft_split("hello", ' ');
-	int		i = 0;
-
-	while (split[i])
-	{
-		printf("%s\n", split[i]);
-		i++;
-	}
-
-	return (0);
-}*/

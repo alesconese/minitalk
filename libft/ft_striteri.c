@@ -26,29 +26,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-/*
-void	iter(unsigned int i, char *c)
-{
-	if (*c >= 'a' && *c <= 'z')
-		*c -= 32;
-	else if (*c >= 'A' && *c <= 'Z')
-		*c += 32;
-}
-
-#include <stdio.h>
-#include <string.h>
-
-int main(void){
-	char	*str;
-
-	str = (char*)malloc(sizeof(*str) * 12);
-	if (!str)
-		return (0);
-	else
-	{
-		strcpy(str, "LoReM iPsUm");
-		ft_striteri(str, *iter);
-		printf("%s\n", str);
-	}
-	return (0);
-}*/

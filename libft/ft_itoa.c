@@ -60,19 +60,9 @@ char	*ft_itoa(int n)
 	str = fill(n, neg);
 	if (!str)
 		return (NULL);
-	if (neg) 
+	if (neg)
 		str[0] = '-';
 	if (min)
 		str[10]++;
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int main(void){
-	int n = -2147483648;
-
-	printf("%s\n", ft_itoa(n));
-
-	return 0;
-}*/
