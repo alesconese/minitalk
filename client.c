@@ -35,7 +35,7 @@ int	main(int argc, char **argv)
 
 	if (argc != 3)
 		return (ft_putstr_fd("Error. Format: ./client <server PID> \
-		<string to send>\n", 1), 1);
+<string to send>\n", 1), 1);
 	pid = ft_atoi(argv[1]);
 	while (*argv[2])
 	{
